@@ -2,8 +2,7 @@
 By learning and using prediction for failures, it is one of the important steps to improve the reliability of the cloud computing system. Furthermore, gave the ability to avoid incidents of failure and costs overhead of the system. It created a wonderful opportunity with the breakthroughs of machine learning and cloud storage that utilize generated huge data that provide pathways to predict when the system or hardware malfunction or fails. It can be used to improve the reliability of the system with the help of insights of using statistical analysis on the workload data from the cloud providers. This research will discuss regarding job usage data of tasks on the large “Google Cluster Workload Traces 2019” dataset, using multiple resampling techniques such as “Random Under Sampling, Random Oversampling and Synthetic Minority Oversampling Technique” to handle the imbalanced dataset. Furthermore, using multiple machine learning algorithm which is for traditional machine learning algorithm are “Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier and Extreme Gradient Boosting Classifier” while deep learning algorithm using “Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)” for job failure prediction between imbalanced and balanced dataset. Then, to have a comparison of imbalanced and balanced in terms of model accuracy, error rate, sensitivity, f – measure, and precision. The results are Extreme Gradient Boosting Classifier and Gradient Boosting Classifier is the most performing algorithm with and without imbalanced handling techniques. It showcases that SMOTE is the best method to choose from for handling imbalanced data. The deep learning model of LSTM and Gated Recurrent Unit may be not the best for the in terms of accuracy, based on the ROC Curve its better than the XGBoost Classifier and Gradient Boosting Classifier.
 
 ## Introduction
-![Proposed Method]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture1.png)
+![Proposed Method](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture1.png)
 
 A brief introduction on the theoretical framework of this study will be provided on this section and will be presenting the imbalance classifier methods used and machine learning techniques that will be used to design the failure prediction models. The conceptual map of research methodology in this paper will simplified in Figure 3.1. 
 
@@ -48,16 +47,14 @@ The “collection_events”, “instance_events”. This process will also be do
 As “PowerBI” has limitations for exporting the file into CSV for rows that exceed 150,000, using “Dax Studio” can overcome these limitations. The rows that the dataset has currently is 2,065,730 and with “Dax Studio” this can be easily exported as CSV file type. Figure 3.4 shows the process of exporting the dataset in “Dax Studio”.
 
 ### Dataset Append
-![Append Dataset Method]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture2.png)
+![Append Dataset Method](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture2.png)
 
 After changing the file type to CSV, based on Figure 3.5, first the dataset needs to be appended based on the collection_events, instance_usage, and instance_events. The dataset is appended first because of the large size in Google Cluster Workload Traces Dataset 2019. By using Dask + Jupyter Notebook, large dataset can be handled easily using lazy computation. Figure below shows the code to append, compute the value of each feature and outputting the file as CSV after the file is appended.
 
 The collection_events are read first as it is separated to partitions. After that in Figure 3.7, the collection_events will be appended using concat method. In Python, the append function is used to add a single item to the list. A new list of items is not returned, but the existing list is modified by adding the new item to its end. The dataset in Figure 3.6 and Figure 3.7 are “collection_events” A, we can start on computing the number of rows it has on the dataset. Figure below showcase the “collection_events” A dataset. All of this are done for the “instance_events” and “instance_usage” as well from Cell A to H. Finally, after the dataset has been append it will save into an appended CSV dataset as a single file. Figure below showcase the appended dataset saved as CSV.
 
 ### Dataset Merge
-![Merge Dataset Method]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture3.png)
+![Merge Dataset Method](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture3.png)
 
 After appending the dataset, based on Figure, the dataset needed to be merge using the method shown in Figure 3.10. Figure 3.11 below shows the code for merging dataset. "Merging" two datasets is the act of putting two datasets together into one and aligning the rows from each based on similar properties or columns. Other languages, as well as Pandas, employ "merge" and "join" in a similar manner. Both the "merge" and the "join" functions in Pandas perform the same thing in practise.
 
@@ -66,25 +63,21 @@ The “Collection_Events”, “Instance_Usage”, and “Instance_Events” are
 ### Data Cleaning
 After the dataset has been merged and filtered, data are cleaned from null values and removing features that doesn’t correlate with feature “type”. Figure below showcase the correlation to the features "type".
 
-![Correlation of the Feature to the "type"]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture4.png)
+![Correlation of the Feature to the "type"](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture4.png)
 
 The features are removed based on the threshold of negative value below 0 but there are certain required features that is needed such as cpu_usage_distribution to be used for power consumption formula and will be kept. The null values found are filled using interpolation backfill method. Finally, the merged job is saved as a single CSV file using Dask Library.
 
 ### Data Reduction
 Since there are limitations to the workstation used in this study, the dataset is reduced to 1 million of rows. The dataset is kept from the first top of 0 to 999999 of row and the remaining bottom is removed. Below Figure 3.17 shows the dataset the computation of the dataset after data reduction.
 
-![Data Reduction]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture5.png)
+![Data Reduction](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture5.png)
 
 ### Data Transformation
-![Imbalanced Data Found on the "type" features]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture6.png)
+![Imbalanced Data Found on the "type" features](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture6.png)
 
 Based on the Figure above this the number of failed jobs = 0 and successful jobs = 1. Since the dataset is highly imbalanced, the imbalance classifier is applied to it. Before handling the imbalanced dataset, we need to explore whether if there’s any outlier on the data. Based on the Figure 3.19 the dataset is mostly right skewed on feature “resource_request.cpus”, “resource_request.memory” and “memory_access_per_instruction”. Since this is a time series dataset, a Log Transformer Power from “sklearn” library are applied towards it. By using Log Power Transformer Power, it can make the data have a normal distribution so that statistical analysis results can be done, and the data is more valid now. To make data more Gaussian-like, power transforms are a type of parametric, monotonic transformation. Useful in cases when normalcy is sought, such as simulating heteroscedasticity (non-constant variance). Based on the dataset it doesn’t reduce the dataset values and it uses Yeo-Johnson which supports both positive and negative data. Here are the results at Figure 3.20 after handling the skewness of the data. After that the imbalanced calassifier will be implemented based on the figure below.
 
-![Data Sampling]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture7.png)
+![Data Sampling](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture7.png)
 
 As shown in Figure, the dataset is quite imbalanced as successful job is more than the failed jobs in the “type” column. So before modelling, the data is going through imbalance classifier to solve the imbalanced in the dataset. There are three (3) imbalance classifier that are chosen to handle the imbalanced dataset. Which is “Random Under sampling (RUS)”, “Random Oversampling (ROS)” and “Synthetic Minority Oversampling Technique (SMOTE)”.
 
@@ -133,11 +126,9 @@ In this section as well is an addition of explainable AI using Dalex, this packa
 
 Based on Figure, Dalex main function called explain () creates a wrapper around the predictive model. Then based on the wrapped models, explanation and comparison are brought up with collection of global and local explainers. Using Dalex as an explainable AI or tools can help gained insight on how the model run for the job failure prediction of Google Trace 2019 dataset (Baniecki et al., 2021). Using Dalex functions, features that are used are Variable Importance, Performance Access and ROC Curve.
 
-![Variable Importance]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture11.png)
+![Variable Importance](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture11.png)
 
-![ROC Curve]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture10.png)
+![ROC Curve](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Proposed%20Method/Picture10.png)
 
 ## Result and Findings
 This study aims to ascertain which features that bring impacts to the job failures in Google Cluster Workload Traces Dataset. Based on the Google Cluster Workload Dataset the features were produced and published in year 2019. According to the findings the probable cause that determine the job failure in the Google Cloud Workload cloud servers are the CPU usage, assigned memory and RAM request. Usually, each time there’s a limit to usage of CPU set by the cloud provider and users that demand more power for their CPU usage while having lesser power would trigger the job failure in the cloud system. While assigned memory and RAM request for that user set which has lesser RAM, than what they have insisted, which caused job failure in the cloud system. Important features in the findings of this study are which can predict job failures accurately are the collection id, priority to complete the task and jobs, CPU request, collection type, scheduler, and the power consumption.
@@ -148,8 +139,7 @@ Power consumption which is a new column that has been added by using CPU usage p
 
 Finally, the goal of evaluating the classifier's performance using explainable AI methodologies was met, based on the ROC Curve presented in the figures using Dalex, the best smoothing curve with better positive rate is by using the SMOTE imbalanced classifier. Even though the LSTM and Gated Recurrent Unit is not the best or highest in accuracy for this study, the ROC Curve shows that the Gated Recurrent Unit and LSTM has the best consistent and ROC curve with and without imbalanced handling. Thus, LSTM and Gated Recurrent Unit, can still be used to be one of the best performing algorithms beside XGBoost Classifier in predicting job failure in the cloud system.  Add on is that the deep learning needs to be add with more complex parameters and hidden layers to further increased the accuracy and reduce the loss or error to further improved the accuracy. Overall, it can be concluded that the experiment conducted by using and comparing the seven-machine learning algorithm with imbalanced handling classifier has successfully reached the objective of this study. 
 
-![ROC Curve Results]
-(https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Results/Picture13.png)
+![ROC Curve Results](https://github.com/Vu5e/JobFailurePredictionGoogleTraces2019/blob/main/Raw/Results/Picture13.png)
 
 # References
 Abadi, M., Barham, P., Chen, J., Chen, Z., Davis, A., Dean, J., Devin, M., Ghemawat, S., Irving, G., Isard, M., Kudlur, M., Levenberg, J., Monga, R., Moore, S., Murray, D. G., Steiner, B., Tucker, P., Vasudevan, V., Warden, P., … Zheng, X. (2016). TensorFlow: A system for large-scale machine learning. Proceedings of the 12th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2016. https://doi.org/10.5555/3026877.3026899
