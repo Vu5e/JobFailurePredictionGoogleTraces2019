@@ -143,118 +143,240 @@ Finally, the goal of evaluating the classifier's performance using explainable A
 
 # References
 Abadi, M., Barham, P., Chen, J., Chen, Z., Davis, A., Dean, J., Devin, M., Ghemawat, S., Irving, G., Isard, M., Kudlur, M., Levenberg, J., Monga, R., Moore, S., Murray, D. G., Steiner, B., Tucker, P., Vasudevan, V., Warden, P., … Zheng, X. (2016). TensorFlow: A system for large-scale machine learning. Proceedings of the 12th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2016. https://doi.org/10.5555/3026877.3026899
+
 Abdul, A., Vermeulen, J., Wang, D., Lim, B. Y., & Kankanhalli, M. (2018). Trends and trajectories for explainable, accountable and intelligible systems: An HCI research agenda. Conference on Human Factors in Computing Systems - Proceedings, 2018-April. https://doi.org/10.1145/3173574.3174156
+
 Abubakar, A., Barbhuiya, S., Kilpatrick, P., Vien, N. A., & Nikolopoulo, D. S. (2020). Fast analysis and prediction in large scale virtual machines resource utilisation. CLOSER 2020 - Proceedings of the 10th International Conference on Cloud Computing and Services Science. https://doi.org/10.5220/0009408701150126
+
 Agarwal, H., & Sharma, A. (2016). A comprehensive survey of Fault Tolerance techniques in Cloud Computing. 2015 International Conference on Computing and Network Communications, CoCoNet 2015. https://doi.org/10.1109/CoCoNet.2015.7411218
+
 Al-Dhuraibi, Y., Paraiso, F., Djarallah, N., & Merle, P. (2018). Elasticity in Cloud Computing: State of the Art and Research Challenges. IEEE Transactions on Services Computing, 11(2). https://doi.org/10.1109/TSC.2017.2711009
+
 Al-Raheym, S., Açan, S. C., & Pusatli, Ö. T. (2016). Investigation Of Amazon And Google For Fault Tolerance Strategies In Cloud Computing Services. AJIT-e Online Academic Journal of Information Technology, 7(23). https://doi.org/10.5824/1309-1581.2016.4.001.x
+
 Alam, T. M., Shaukat, K., Hameed, I. A., Luo, S., Sarwar, M. U., Shabbir, S., Li, J., & Khushi, M. (2020). An investigation of credit card default prediction in the imbalanced datasets. IEEE Access, 8. https://doi.org/10.1109/ACCESS.2020.3033784
+
 Alber, M., Lapuschkin, S., Seegerer, P., Hägele, M., Schütt, K. T., Montavon, G., Samek, W., Müller, K. R., Dähne, S., & Kindermans, P. J. (2019). INNvestigate neural networks! Journal of Machine Learning Research, 20.
+
 Anaconda Inc. (2021). Anaconda. Https://Www.Anaconda.Com/.
+
 Angarita, R., Rukoz, M., Manouvrier, M., & Cardinale, Y. (2016). A knowledge-based approach for self-healing service-oriented applications. 8th International Conference on Management of Digital EcoSystems, MEDES 2016. https://doi.org/10.1145/3012071.3012100
-Arya, V., Bellamy, R. K. E., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., Houde, S., Liao, Q. V., Luss, R., Mojsilović, A., Mourad, S., Pedemonte, P., Raghavendra, R., Richards, J. T., Sattigeri, P., Shanmugam, K., Singh, M., Varshney, K. R., Wei, D., & Zhang, Y. (2020). Ai explainability 360: An extensible toolkit for understanding data and machine learning models. Journal of Machine Learning Research, 21.
+
+Arya, V., Bellamy, R. K. E., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., Houde, S., Liao, Q. V., Luss, R., Mojsilović, A., Mourad, S., Pedemonte, P., Raghavendra, R., 
+
+Richards, J. T., Sattigeri, P., Shanmugam, K., Singh, M., Varshney, K. R., Wei, D., & Zhang, Y. (2020). Ai explainability 360: An extensible toolkit for understanding data and machine learning models. Journal of Machine Learning Research, 21.
+
 Baniecki, H., Kretowicz, W., Piatyszek, P., Wisniewski, J., & Biecek, P. (2021). dalex: Responsible machine learning with interactive explainability and fairness in python. Journal of Machine Learning Research, 22.
+
 Barredo Arrieta, A., Díaz-Rodríguez, N., Del Ser, J., Bennetot, A., Tabik, S., Barbado, A., Garcia, S., Gil-Lopez, S., Molina, D., Benjamins, R., Chatila, R., & Herrera, F. (2020). Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI. Information Fusion, 58. https://doi.org/10.1016/j.inffus.2019.12.012
+
 Barroso, L. A., Clidaras, J., & Hölzle, U. (2013). The datacenter as a computer: An introduction to the design of warehouse-scale machines, second edition. Synthesis Lectures on Computer Architecture, 24. https://doi.org/10.2200/S00516ED2V01Y201306CAC024
+
 Bellamy, R. K. E., Dey, K., Hind, M., Hoffman, S. C., Houde, S., Kannan, K., Lohia, P., Martino, J., Mehta, S., Mojsilovic, A., Nagar, S., Ramamurthy, K. N., Richards, J., Saha, D., Sattigeri, P., Singh, M., Varshney, K. R., & Zhang, Y. (2018). Ai fairness 360: An extensible toolkit for detecting, understanding, and mitigating unwanted algorithmic bias. ArXiv.
+
 Charles Reiss, John Wilkes, & Joseph Hellerstein. (2011). Google cluster-usage traces: format + schema. Google.
+
 Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: Synthetic minority over-sampling technique. Journal of Artificial Intelligence Research, 16. https://doi.org/10.1613/jair.953
+
 Chawla, N. V, Japkowicz, N., & Drive, P. (2004). Editorial : Special Issue on Learning from Imbalanced Data Sets Aleksander Ko l cz. ACM SIGKDD Explorations Newsletter, 6(1).
+
 Chen, G., Jin, H., Zou, D., Zhou, B. B., Qiang, W., & Hu, G. (2010). SHelp: Automatic self-healing for multiple application instances in a virtual machine environment. Proceedings - IEEE International Conference on Cluster Computing, ICCC. https://doi.org/10.1109/CLUSTER.2010.18
+
 Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 13-17-August-2016. https://doi.org/10.1145/2939672.2939785
+
 Chen, X., Lu, C. Da, & Pattabiraman, K. (2014a). Failure analysis of jobs in compute clouds: A google cluster case study. Proceedings - International Symposium on Software Reliability Engineering, ISSRE. https://doi.org/10.1109/ISSRE.2014.34
+
 Chen, X., Lu, C. Da, & Pattabiraman, K. (2014b). Failure prediction of jobs in compute clouds: A Google cluster case study. Proceedings - IEEE 25th International Symposium on Software Reliability Engineering Workshops, ISSREW 2014. https://doi.org/10.1109/ISSREW.2014.105
+
 Cheng, Y., Chai, Z., & Anwar, A. (2018). Characterizing co-located datacenter workloads: An alibaba case study. Proceedings of the 9th Asia-Pacific Workshop on Systems, APSys 2018. https://doi.org/10.1145/3265723.3265742
+
 Chris Parmer, & Nicolas Kruchten. (2020). plotly: An open-source, interactive data visualization library for Python. GitHub.
+
 David Cournapeau. (2007). Scikit-learn. Https://Scikit-Learn.Org/Stable/Index.Html.
-Dinu, F., & Ng, T. S. E. (2012). Understanding the effects and implications of compute node related failures in Hadoop. HPDC ’12 - Proceedings of the 21st ACM Symposium on High-Performance Parallel and Distributed Computing. https://doi.org/10.1145/2287076.2287108
+
+Dinu, F., & Ng, T. S. E. (2012). Understanding the effects and implications of compute node related failures in Hadoop. HPDC ’12 - Proceedings of the 21st ACM Symposium on High-
+Performance Parallel and Distributed Computing. https://doi.org/10.1145/2287076.2287108
+
 Dubey, K., Shams, M. Y., Sharma, S. C., Alarifi, A., Amoon, M., & Nasr, A. A. (2019). A Management System for Servicing Multi-Organizations on Community Cloud Model in Secure Cloud Environment. IEEE Access, 7. https://doi.org/10.1109/ACCESS.2019.2950110
+
 Egwutuoha, I. P., Chen, S., Levy, D., & Selic, B. (2012). A fault tolerance framework for high performance computing in cloud. Proceedings - 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing, CCGrid 2012. https://doi.org/10.1109/CCGrid.2012.80
+
 El-Sayed, N., Zhu, H., & Schroeder, B. (2017). Learning from Failure Across Multiple Clusters: A Trace-Driven Approach to Understanding, Predicting, and Mitigating Job Terminations. Proceedings - International Conference on Distributed Computing Systems. https://doi.org/10.1109/ICDCS.2017.317
+
 Eli Cortez, Microsoft GitHub User, Microsoft Open Source, & Rodrigo Fonseca. (2017). Microsoft Azure Traces. GitHub.
 Elzamly, A., & Hussin, B. (2016). Classification of critical cloud computing security issues for banking organizations: A cloud delphi study. International Journal of Grid and Distributed Computing, 9(8). https://doi.org/10.14257/ijgdc.2016.9.8.13
+
 Fadishei, H., Saadatfar, H., & Deldari, H. (2009). Job failure prediction in grid environment based on workload characteristics. 2009 14th International CSI Computer Conference, CSICC 2009. https://doi.org/10.1109/CSICC.2009.5349381
+
 Feldman, M., Friedler, S. A., Moeller, J., Scheidegger, C., & Venkatasubramanian, S. (2015). Certifying and removing disparate impact. Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2015-August. https://doi.org/10.1145/2783258.2783311
+
 Feng, Y., Wang, T., Hu, B., Yang, C., & Tan, J. (2020). An integrated method for high-dimensional imbalanced assembly quality prediction supported by edge computing. IEEE Access, 8. https://doi.org/10.1109/ACCESS.2020.2988118
+
 Figone, S. (2020). Scaling in the Cloud. RapidScale.
+
 François Chollet. (2015). Keras. Https://Keras.Io/Api/.
+
 Galar, M., Fernandez, A., Barrenechea, E., Bustince, H., & Herrera, F. (2012). A review on ensembles for the class imbalance problem: Bagging-, boosting-, and hybrid-based approaches. In IEEE Transactions on Systems, Man and Cybernetics Part C: Applications and Reviews (Vol. 42, Issue 4). https://doi.org/10.1109/TSMCC.2011.2161285
 Gao, J., Wang, H., & Shen, H. (2020). Task Failure Prediction in Cloud Data Centers Using Deep Learning. IEEE Transactions on Services Computing. https://doi.org/10.1109/TSC.2020.2993728
+
 Garg, A., & Bagga, S. (2016). An autonomic approach for fault tolerance using scaling, replication and monitoring in cloud computing. Proceedings of the 2015 IEEE 3rd International Conference on MOOCs, Innovation and Technology in Education, MITE 2015. https://doi.org/10.1109/MITE.2015.7375302
+
 Garraghan, P., Townend, P., & Xu, J. (2014). An empirical failure-analysis of a large-scale cloud computing environment. Proceedings - 2014 IEEE 15th International Symposium on High-Assurance Systems Engineering, HASE 2014. https://doi.org/10.1109/HASE.2014.24
+
 Gill, S. S., & Buyya, R. (2018). A taxonomy and future directions for sustainable cloud computing: 360 degree view. ACM Computing Surveys, 51(5). https://doi.org/10.1145/3241038
+
 Google. (2019a). Tensorflow-GPU. Https://Www.Tensorflow.Org/.
+
 Google. (2019b). Tensorflow. Https://Www.Tensorflow.Org/.
+
 Guan, Q., Zhang, Z., & Fu, S. (2012). A Failure Detection and Prediction Mechanism for Enhancing Dependability of Data Centers. International Journal of Computer Theory and Engineering. https://doi.org/10.7763/ijcte.2012.v4.566
+
 Guido van Rossum. (2021). Python. Https://Docs.Python.Org/3.9/.
+
 H2O.ai. Python Interface for H2O. (2020). GitHub.
+
 Haiyang Ding, Zhen Zhang, Shijun Qin, Violet Guo, Zihao Chang, & Ruslan Dautov. (2017). Alibaba Cluster Trace Program. GitHub.
-Hannache, O., & Batouche, M. (2015). Probabilistic model for evaluating a proactive fault tolerance approach in the cloud. 10th IEEE Int. Conf. on Service Operations and Logistics, and Informatics, SOLI 2015 - In Conjunction with ICT4ALL 2015. https://doi.org/10.1109/SOLI.2015.7367599
+
+Hannache, O., & Batouche, M. (2015). Probabilistic model for evaluating a proactive fault tolerance approach in the cloud. 10th IEEE Int. Conf. on Service Operations and 
+Logistics, and Informatics, SOLI 2015 - In Conjunction with ICT4ALL 2015. https://doi.org/10.1109/SOLI.2015.7367599
+
 Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N. J., Kern, R., Picus, M., Hoyer, S., van Kerkwijk, M. H., Brett, M., Haldane, A., del Río, J. F., Wiebe, M., Peterson, P., … Oliphant, T. E. (2020). Array programming with NumPy. In Nature (Vol. 585, Issue 7825). https://doi.org/10.1038/s41586-020-2649-2
+
 He, H., Bai, Y., Garcia, E. A., & Li, S. (2008). ADASYN: Adaptive synthetic sampling approach for imbalanced learning. Proceedings of the International Joint Conference on Neural Networks. https://doi.org/10.1109/IJCNN.2008.4633969
+
 He, H., & Garcia, E. A. (2009). Learning from imbalanced data. IEEE Transactions on Knowledge and Data Engineering, 21(9), 1263–1284. https://doi.org/10.1109/TKDE.2008.239
-Holstein, K., Vaughan, J. W., Daumé, H., Dudík, M., & Wallach, H. (2019). Improving fairness in machine learning systems: What do industry practitioners need? Conference on Human Factors in Computing Systems - Proceedings. https://doi.org/10.1145/3290605.3300830
+
+Holstein, K., Vaughan, J. W., Daumé, H., Dudík, M., & Wallach, H. (2019). Improving fairness in machine learning systems: What do industry practitioners need? Conference on 
+
+Human Factors in Computing Systems - Proceedings. https://doi.org/10.1145/3290605.3300830
+
 Islam, T., & Manivannan, D. (2017). Predicting Application Failure in Cloud: A Machine Learning Approach. Proceedings - 2017 IEEE 1st International Conference on Cognitive Computing, ICCC 2017. https://doi.org/10.1109/IEEE.ICCC.2017.11
+
 Jadeja, Y., & Modi, K. (2012). Cloud computing - Concepts, architecture and challenges. 2012 International Conference on Computing, Electronics and Electrical Technologies, ICCEET 2012. https://doi.org/10.1109/ICCEET.2012.6203873
+
 Jassas, M. S., & Mahmoud, Q. H. (2019). Failure characterization and prediction of scheduling jobs in google cluster traces. 2019 IEEE 10th GCC Conference and Exhibition, GCC 2019. https://doi.org/10.1109/GCC45510.2019.1570516010
+
 JeminaPriyadarsini, R., & Arockiam, L. (2014). Performance Evaluation of Min-Min and Max-Min Algorithms for Job Scheduling in Federated Cloud. International Journal of Computer Applications, 99(18). https://doi.org/10.5120/17477-8393
+
 John D. Hunter. (2003). Matplotlib. Https://Matplotlib.Org/.
-Kaur, H., Nori, H., Jenkins, S., Caruana, R., Wallach, H., & Wortman Vaughan, J. (2020). Interpreting Interpretability: Understanding Data Scientists’ Use of Interpretability Tools for Machine Learning. Conference on Human Factors in Computing Systems - Proceedings. https://doi.org/10.1145/3313831.3376219
+
+Kaur, H., Nori, H., Jenkins, S., Caruana, R., Wallach, H., & Wortman Vaughan, J. (2020). Interpreting Interpretability: Understanding Data Scientists’ Use of Interpretability 
+Tools for Machine Learning. Conference on Human Factors in Computing Systems - Proceedings. https://doi.org/10.1145/3313831.3376219
+
 Khodaverdian, Z., Sadr, H., Edalatpanah, S. A., & Solimandarabi, M. N. (2021). Combination of Convolutional Neural Network and Gated Recurrent Unit for Energy Aware Resource Allocation.
+
 Klaise, J., Van Looveren, A., Vacanti, G., & Coca, A. (2021). Alibi explain: Algorithms for explaining machine learning models. Journal of Machine Learning Research, 22.
+
 Knauth, T., & Fetzer, C. (2015). VeCycle: Recycling VM checkpoints for faster migrations. Middleware 2015 - Proceedings of the 16th Annual Middleware Conference. https://doi.org/10.1145/2814576.2814731
+
 Krawczyk, B. (2016). Learning from imbalanced data: open challenges and future directions. In Progress in Artificial Intelligence (Vol. 5, Issue 4). https://doi.org/10.1007/s13748-016-0094-0
+
 Kwon, Y. C., Balazinska, M., & Greenberg, A. (2008). Fault-tolerant stream processing using a distributed, replicated file system. Proceedings of the VLDB Endowment, 1(1). https://doi.org/10.14778/1453856.1453920
+
 Levy, S., Yao, R., Wu, Y., Dang, Y., Huang, P., Mu, Z., Zhao, P., Ramani, T., Govindaraju, N., Li, X., Lin, Q., Shafriri, G. L., & Chintalapati, M. (2020). Predictive and adaptive failure mitigation to avert production cloud VM interruptions. Proceedings of the 14th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2020.
+
 Li, F., & Hu, B. (2019). DeepJS: Job scheduling based on deep reinforcement learning in cloud data center. ACM International Conference Proceeding Series. https://doi.org/10.1145/3335484.3335513
+
 Li, Z., Zhang, H., Brien, L. O., Cai, R., & Flint, S. (2013). The Journal of Systems and Software On evaluating commercial Cloud services : A systematic review. The Journal of Systems & Software, 86(9).
+
 Lin, Q., Hsieh, K., Dang, Y., Zhang, H., Sui, K., Xu, Y., Lou, J. G., Li, C., Wu, Y., Yao, R., Chintalapati, M., & Zhang, D. (2018). Predicting node failure in cloud service systems. ESEC/FSE 2018 - Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering. https://doi.org/10.1145/3236024.3236060
+
 Lin, Y., Barker, A., & Ceesay, S. (2020). Exploring Characteristics of Inter-cluster Machines and Cloud Applications on Google Clusters. Proceedings - 2020 IEEE International Conference on Big Data, Big Data 2020. https://doi.org/10.1109/BigData50022.2020.9377802
+
 Liu, N., Li, Z., Xu, J., Xu, Z., Lin, S., Qiu, Q., Tang, J., & Wang, Y. (2017). A Hierarchical Framework of Cloud Resource Allocation and Power Management Using Deep Reinforcement Learning. 2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS), 372–382. https://doi.org/10.1109/ICDCS.2017.123
+
 Lorido-Botran, T., Miguel-Alonso, J., & Lozano, J. A. (2014). A Review of Auto-scaling Techniques for Elastic Applications in Cloud Environments. Journal of Grid Computing, 12(4). https://doi.org/10.1007/s10723-014-9314-7
+
 Lu, C., Ye, K., Xu, G., Xu, C. Z., & Bai, T. (2017). Imbalance in the cloud: An analysis on Alibaba cluster trace. Proceedings - 2017 IEEE International Conference on Big Data, Big Data 2017, 2018-Janua. https://doi.org/10.1109/BigData.2017.8258257
+
 Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in Neural Information Processing Systems, 2017-December.
+
 Luo, C., Zhao, P., Qiao, B., Wu, Y., Zhang, H., Wu, W., Lu, W., Dang, Y., Rajmohan, S., Lin, Q., & Zhang, D. (2021). NTAM: Neighborhood-temporal attention model for disk failure prediction in cloud platforms. The Web Conference 2021 - Proceedings of the World Wide Web Conference, WWW 2021. https://doi.org/10.1145/3442381.3449867
+
 Manju, B. R., & Nair, A. R. (2019). Classification of Cardiac Arrhythmia of 12 Lead ECG Using Combination of SMOTEENN, XGBoost and Machine Learning Algorithms. Proceedings of the 2019 International Symposium on Embedded Computing and System Design, ISED 2019. https://doi.org/10.1109/ISED48680.2019.9096244
+
 Matthew Rocklin. (2015). Dask. Https://Docs.Dask.Org/En/Stable/.
+
 Mell, P., & Grance, T. (2011). The NIST definition of cloud computing. In Cloud Computing and Government: Background, Benefits, Risks. https://doi.org/10.1016/b978-0-12-804018-8.15003-x
+
 Melo, M., Araujo, J., Matos, R., Menezes, J., & Maciel, P. (2013). Comparative analysis of migration-based rejuvenation schedules on cloud availability. Proceedings - 2013 IEEE International Conference on Systems, Man, and Cybernetics, SMC 2013. https://doi.org/10.1109/SMC.2013.701
+
 Miller, T. (2019). Explanation in artificial intelligence: Insights from the social sciences. In Artificial Intelligence (Vol. 267). https://doi.org/10.1016/j.artint.2018.07.007
+
 Mishra, S. K., Sahoo, B., & Parida, P. P. (2020). Load balancing in cloud computing: A big picture. In Journal of King Saud University - Computer and Information Sciences (Vol. 32, Issue 2). https://doi.org/10.1016/j.jksuci.2018.01.003
+
 Mukwevho, M. A., & Celik, T. (2021). Toward a Smart Cloud: A Review of Fault-Tolerance Methods in Cloud Systems. IEEE Transactions on Services Computing, 14(2). https://doi.org/10.1109/TSC.2018.2816644
+
 Outright Systems. (2019). Cloud Computing in Business. Medium.
-Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12.
+
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, 
+
+D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12.
+
 Pezoa, J. E., & Hayat, M. M. (2014). Reliability of heterogeneous distributed computing systems in the presence of correlated failures. IEEE Transactions on Parallel and Distributed Systems, 25(4). https://doi.org/10.1109/TPDS.2013.78
+
 Piotr Piatyszek, & Przemyslaw Biecek. (2020). Arena: universal dashboard for model exploration. Drwhy.Ai.
+
 Plesky, E. (2019, October 24). IaaS vs PaaS vs SaaS – cloud service models compared. Plesk.
+
 Puthal, D., Sahoo, B. P. S., Mishra, S., & Swain, S. (2015). Cloud computing features, issues, and challenges: A big picture. Proceedings - 1st International Conference on Computational Intelligence and Networks, CINE 2015. https://doi.org/10.1109/CINE.2015.31
+
 Python. (2008). Joblib. Https://Joblib.Readthedocs.Io/En/Latest/.
+
 Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). “Why should i trust you?” Explaining the predictions of any classifier. Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 13-17-August-2016. https://doi.org/10.1145/2939672.2939778
+
 Rosa, A., Chen, L. Y., & Binder, W. (2015). Understanding the Dark Side of Big Data Clusters: An Analysis beyond Failures. Proceedings of the International Conference on Dependable Systems and Networks, 2015-Septe. https://doi.org/10.1109/DSN.2015.37
+
 Rustogi, R., & Prasad, A. (2019). Swift imbalance data classification using SMOTE and extreme learning machine. ICCIDS 2019 - 2nd International Conference on Computational Intelligence in Data Science, Proceedings. https://doi.org/10.1109/ICCIDS.2019.8862112
+
 Sak, H., Senior, A., & Beaufays, F. (2014). Long short-term memory recurrent neural network architectures for large scale acoustic modeling. Proceedings of the Annual Conference of the International Speech Communication Association, INTERSPEECH. https://doi.org/10.21437/interspeech.2014-80
+
 Saleiro, P., Rodolfa, K. T., & Ghani, R. (2020). Dealing with Bias and Fairness in Data Science Systems: A Practical Hands-on Tutorial. Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. https://doi.org/10.1145/3394486.3406708
+
 Sharma, Y., Javadi, B., Si, W., & Sun, D. (2016). Reliability and energy efficiency in cloud computing systems: Survey and taxonomy. In Journal of Network and Computer Applications (Vol. 74). https://doi.org/10.1016/j.jnca.2016.08.010
+
 Shetty, J., Sajjan, R., & Shobha, G. (2019). Task resource usage analysis and failure prediction in cloud. Proceedings of the 9th International Conference On Cloud Computing, Data Science and Engineering, Confluence 2019. https://doi.org/10.1109/CONFLUENCE.2019.8776612
+
 Singh, A., & Purohit, A. (2015). A Survey on Methods for Solving Data Imbalance Problem for Classification. International Journal of Computer Applications, 127(15). https://doi.org/10.5120/ijca2015906677
-Soualhia, M., Khomh, F., & Tahar, S. (2015). Predicting scheduling failures in the cloud: A case study with google clusters and hadoop on Amazon EMR. Proceedings - 2015 IEEE 17th International Conference on High Performance Computing and Communications, 2015 IEEE 7th International Symposium on Cyberspace Safety and Security and 2015 IEEE 12th International Conference on Embedded Software and Systems, H, 58–65. https://doi.org/10.1109/HPCC-CSS-ICESS.2015.170
+
+Soualhia, M., Khomh, F., & Tahar, S. (2015). Predicting scheduling failures in the cloud: A case study with google clusters and hadoop on Amazon EMR. Proceedings - 2015 IEEE 17th International Conference on High Performance Computing and Communications, 2015 IEEE 7th International Symposium on Cyberspace Safety and Security and 2015 IEEE 12th 
+International Conference on Embedded Software and Systems, H, 58–65. https://doi.org/10.1109/HPCC-CSS-ICESS.2015.170
+
 Sung, C., Zhang, B., Higgins, C. Y., & Choe, Y. (2016). Data-driven sales leads prediction for everything-as-a-service in the cloud. Proceedings - 3rd IEEE International Conference on Data Science and Advanced Analytics, DSAA 2016. https://doi.org/10.1109/DSAA.2016.83
+
 Surbiryala, J., & Rong, C. (2019). Cloud computing: History and overview. Proceedings - 2019 3rd IEEE International Conference on Cloud and Fog Computing Technologies and Applications, Cloud Summit 2019. https://doi.org/10.1109/CloudSummit47114.2019.00007
+
 Tang, H., Li, Y., Jia, T., & Wu, Z. (2016). Hunting Killer Tasks for Cloud System through Machine Learning: A Google Cluster Case Study. Proceedings - 2016 IEEE International Conference on Software Quality, Reliability and Security, QRS 2016. https://doi.org/10.1109/QRS.2016.11
+
 Tirmazi, M., Barker, A., Deng, N., Haque, M. E., Qin, Z. G., Hand, S., Harchol-Balter, M., & Wilkes, J. (2020). Borg: The next generation. Proceedings of the 15th European Conference on Computer Systems, EuroSys 2020. https://doi.org/10.1145/3342195.3387517
+
 Travis Oliphant. (2005). Numpy. Https://Numpy.Org/Doc/Stable/.
 Verma, A., Pedrosa, L., Korupolu, M., Oppenheimer, D., Tune, E., & Wilkes, J. (2015). Large-scale cluster management at Google with Borg. Proceedings of the 10th European Conference on Computer Systems, EuroSys 2015. https://doi.org/10.1145/2741948.2741964
+
 Verma, S., & Rubin, J. (2018). Fairness definitions explained. Proceedings - International Conference on Software Engineering. https://doi.org/10.1145/3194770.3194776
+
 Vishwanath, K. V., & Nagappan, N. (2010). Characterizing cloud computing hardware reliability. Proceedings of the 1st ACM Symposium on Cloud Computing, SoCC ’10. https://doi.org/10.1145/1807128.1807161
+
 Watanabe, Y., Otsuka, H., Sonoda, M., Kikuchi, S., & Matsumoto, Y. (2012). Online failure prediction in cloud datacenters by real-time message pattern learning. CloudCom 2012 - Proceedings: 2012 4th IEEE International Conference on Cloud Computing Technology and Science. https://doi.org/10.1109/CloudCom.2012.6427566
+
 Wes McKinney. (2008). Pandas. Https://Pandas.Pydata.Org/Docs/.
+
 Wilkes, J., Reiss, C., Deng, N., Haque, E. M., & Tirmazi, M. (2020). Google cluster-usage traces v3.
+
 Wu, H., Zhang, W., Xu, Y., Xiang, H., Huang, T., Ding, H., & Zhang, Z. (2019). Aladdin: Optimized maximum flow management for shared production clusters. Proceedings - 2019 IEEE 33rd International Parallel and Distributed Processing Symposium, IPDPS 2019. https://doi.org/10.1109/IPDPS.2019.00078
+
 Xu, Y., Sui, K., Yao, R., Zhang, H., Lin, Q., Dang, Y., Li, P., Jiang, K., Zhang, W., Lou, J. G., Chintalapati, M., & Zhang, D. (2020). Improving service availability of cloud systems by predicting disk error. Proceedings of the 2018 USENIX Annual Technical Conference, USENIX ATC 2018.
+
 Yan, B., Zhao, Y., Li, Y., Yu, X., Zhang, J., & Yilin, H. Z. (2018). First Demonstration of Imbalanced Data Learning-Based Failure Prediction in Self-Optimizing Optical Networks with Large Scale Field Topology. Asia Communications and Photonics Conference, ACP, 2018-Octob. https://doi.org/10.1109/ACP.2018.8595733
+
 Yassir, S., Mostapha, Z., & Tadonki, C. (2018). Analyzing fault tolerance mechanism of Hadoop Mapreduce under different type of failures. 2018 4th International Conference on Cloud Computing Technologies and Applications, Cloudtech 2018. https://doi.org/10.1109/CloudTech.2018.8713332
+
 Yigitbasi, N., Gallet, M., Kondo, D., Iosup, A., & Epema, D. (2010). Analysis and modeling of time-correlated failures in large-scale distributed systems. Proceedings - IEEE/ACM International Workshop on Grid Computing. https://doi.org/10.1109/GRID.2010.5697961
+
 Yuan, Y., Wu, Y., Wang, Q., Yang, G., & Zheng, W. (2012). Job failures in High Performance Computing Systems: A large-scale empirical study. Computers and Mathematics with Applications, 63(2). https://doi.org/10.1016/j.camwa.2011.07.040
+
 Yuan, Z., & Zhao, P. (2019). An improved ensemble learning for imbalanced data classification. Proceedings of 2019 IEEE 8th Joint International Information Technology and Artificial Intelligence Conference, ITAIC 2019. https://doi.org/10.1109/ITAIC.2019.8785887
+
 Zeng, M., Zou, B., Wei, F., Liu, X., & Wang, L. (2016). Effective prediction of three common diseases by combining SMOTE with Tomek links technique for imbalanced medical data. Proceedings of 2016 IEEE International Conference of Online Analysis and Computing Science, ICOACS 2016. https://doi.org/10.1109/ICOACS.2016.7563084
+
 Zhang, J., & Mani, I. (2003). KNN Approach to Unbalanced Data Distributions: A Case Study Involving Information Extraction. Proceedings of the ICML’2003 Workshop on Learning from Imbalanced Datasets.
